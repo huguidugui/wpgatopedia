@@ -1,0 +1,45 @@
+{# ======== RAZAS DE GATO ======= #}
+  <section id="features" class="features my-5">
+    <div class="container">
+      <div class="section-title">
+        <h2>Razas de Gatos</h2>
+        <p>
+          Conoce todas las razas de gato clasificadas por TICA, aquì te mostramos 12 de las más populares:
+        </p>
+      </div>
+      {# ROW CON LOS 12 GATOS RANDOM #} 
+      <div class="row">
+        {% set colores = colores_aleatorios %}
+        {% set contador = 0 %}
+
+        {% for raza in random_razas %}
+          {% set color = colores[contador % 6] %}
+          {% set titulo = raza.custom['alternative-title'] is not null and raza.custom['alternative-title'] is not empty ? raza.custom['alternative-title'] : raza.title %}
+          <div class="col-lg-3 col-md-4 mb-3 mt-md-0">
+            <div class="icon-box border-{{ color }}">
+              <i class="bg-patita bg-patita-{{ color }} me-1"></i>
+              <h3>
+                <a href="{{ raza.link }}">
+                  {{ titulo }}
+                </a>
+              </h3>
+            </div>
+          </div>
+           {% if loop.index % 4 == 0 %}
+                {% set contador = contador + 1 %}
+            {% endif %}
+        {% endfor %}
+      </div>
+      {# ROW CON LOS 12 GATOS RANDOM #} 
+
+      {# {{ function('do_shortcode', '[wpforms id="374"]') }} #}
+        
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <span>botón grande que lleve a razas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# ======== /RAZAS DE GATO ======= #}

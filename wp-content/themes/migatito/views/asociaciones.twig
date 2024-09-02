@@ -1,0 +1,67 @@
+<main id="main">
+  <!-- ======= Blog Section ======= -->
+  {% if function('function_exists', 'my_breadcrumbs') %}
+    {{ function('my_breadcrumbs') }}
+  {%  endif %}<!-- End Blog Section -->
+
+  <!-- ======= Service Details Section ======= -->
+  <section class="service-details">
+    <div class="container">
+      <div class="section-title">
+        <h1>Asociaciones Internacionales de Gatos</h1>
+        <p>Existen 4 importantes asociaciones dedicadas a clasificar las razas de gatos, la que cuenta con el catálogo más extenso es la asociacións a TICA. Conoce más de cada una dando click en cada una:</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="{{ directory_theme }}/img/asociacion-tica.png" alt=".....">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="{{ site_url }}/blog/tica-la-asociacion-internacional-de-gatos/">TICA</a></h5>
+              <p class="card-text">Es una de las organizaciones felinas más grandes y reconocidas a nivel mundial. Establece estándares para más de 70 razas de gatos y organiza exhibiciones y competencias felinas en todo el mundo. Originaria de USA</p>
+              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="{{ directory_theme }}/img/asociacion-cfa.png" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">CFA</a></h5>
+              <p class="card-text">es otra organización de renombre que establece estándares para más de 40 razas de gatos. También organiza exhibiciones y competencias felinas, y es especialmente influyente en América del Norte. Originaria de USA</p>
+              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="{{ directory_theme }}/img/asociacion-fife.png" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">FIFe</a></h5>
+              <p class="card-text">La FIFe es una organización felina con sede en Europa que agrupa a asociaciones y clubes felinos de diversos países. Establece estándares para varias razas de gatos y coordina eventos y competencias en Europa y otros lugares. Originaria de Luxemburgo</p>
+              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <div class="card">
+            <div class="card-img">
+              <img src="{{ directory_theme }}/img/asociacion-acfa.png" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#">ACFA</a></h5>
+              <p class="card-text">Es una organización que se enfoca en el reconocimiento de una amplia variedad de razas de gatos. Reconoce alrededor de 44 razas de gatos y se va actualizando. Originaria de USA</p>
+              <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Service Details Section -->
+</main>

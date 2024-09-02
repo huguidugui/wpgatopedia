@@ -1,0 +1,95 @@
+<main id="main">
+    {# **** Section BREADCRUMBS ***** #}
+      {% if function('function_exists', 'my_breadcrumbs') %}
+        {{ function('my_breadcrumbs') }}
+      {%  endif %}
+    {# **** /Section BREADCRUMBS ***** #}
+   
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Equipo de gatopedia</h2>
+          <p>
+            En "Nosotros," nuestra pasión y entusiasmo por los gatos nos impulsan. Somos una comunidad unida, dedicada al bienestar de estos increíbles animales. Nuestra prioridad es proporcionar información confiable y actualizada sobre todas las razas de gatos, para que los dueños puedan cuidar mejor a sus compañeros peludos. Nuestra comunidad es un lugar donde los amantes de los gatos pueden conectarse, compartir experiencias y aprender juntos. Creemos que al unir nuestra pasión, compromiso y conocimientos, podemos mejorar la vida de los gatos y enriquecer la de sus dueños. Únete a nosotros en esta emocionante aventura de descubrimiento felino.
+          </p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item border-purple">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{ directory_theme }}/img/nosotros-3.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Pasión y Entusiasmo</h4>
+                    <p>
+                      Somos apasionados por las razas felinas y celebramos la belleza única de cada gato. Explore nuestras galerías de fotos y artículos inspiradores sobre estos fascinantes compañeros peludos.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>{# End Card Item #}
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item border-green">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{ directory_theme }}/img/nosotros-2.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Comunidad y Conexión</h4>
+                    <p>
+                      Únase a nuestra comunidad de amantes de los gatos. Encuentre apoyo, comparta historias y forme conexiones significativas con otros dueños de gatos en nuestro foro en línea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>{# End Card Item #}
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item border-pink">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{ directory_theme }}/img/nosotros-4.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Información Confiable y Precisa</h4>
+                    <p>
+                      Nuestro sitio web es su fuente confiable para conocer a fondo cada raza de gato, brindándole datos precisos y actualizados para cuidar mejor a su felino.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>{# End Card Item #}
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item border-blue">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({{ directory_theme }}/img/nosotros-1.jpg);"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Compromiso con el Bienestar Felino</h4>
+                    <p>
+                      Nos apasiona el bienestar de los gatos y compartimos consejos expertos para asegurarnos de que su gato viva una vida saludable y feliz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>{# End Card Item #}
+
+        </div>
+
+      </div>
+    </section>
+</main>

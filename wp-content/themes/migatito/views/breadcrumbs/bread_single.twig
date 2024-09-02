@@ -1,0 +1,33 @@
+<section class="breadcrumbs">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+           {#  <h2>{{ title }}</h2>  #}      
+            <div class="breadcrumb-container">
+                <ol class="breadcrumb-inside" 
+                    itemscope itemtype="http://schema.org/BreadcrumbList">
+                    {% set contador = 0 %}
+                    {% for info in info_array %}
+
+                        <li itemprop="itemListElement"
+                            itemscope itemtype="http://schema.org/ListItem">
+                                <a itemprop="item" href="{{ info.url }}">
+                                    <span class="item-home" itemprop="name">{{ info.cat_name }}</span>
+                                </a>
+                            <meta itemprop="position" content="{{ info.position }}">
+                        </li>
+                        {% set contador = contador + 1 %}
+                    {% endfor %}
+
+                    {% set contador = contador + 1 %}
+
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <meta itemprop="position" itemprop="item" content="{{ contador }}">
+                        <a class="last-link-breadcrumb" itemprop="item" href="{{ permalink }}">
+                            <span class="item-home" itemprop="name">{{ title }}</span>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>

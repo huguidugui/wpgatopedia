@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'my-icons';
+    src: url('../fonts/my-icons.woff2') format('woff2'),
+         url('../fonts/my-icons.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'my-icons';
+    font-size: 24px; // Tamaño de fuente personalizable
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

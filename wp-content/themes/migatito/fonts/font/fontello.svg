@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2023 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="thumbs-up" unicode="&#xe800;" d="M0-63l0 552q0 16 10 25t25 11l147 0q33 0 35-36l0-552q0-14-10-24t-25-12l-147 0q-13 0-23 10t-12 26z m277 27l0 500q0 22 14 35t37 16l113 0 114 252q13 31 41 31 37 2 93-61 18-25 25-55t6-48-9-64-10-55l248 0q26 0 38-17t11-44l-70-429q-12-42-53-74t-88-38l-459 0q-21 0-35 14t-16 37z" horiz-adv-x="998" />
+
+<glyph glyph-name="cancel-circled2" unicode="&#xe801;" d="M0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m109 0q0-162 115-276t276-115 276 115 115 276-115 276-276 115-276-115-115-276z m145-137l137 137-137 137 109 109 137-137 137 137 109-109-137-137 137-137-109-109-137 137-137-137z" horiz-adv-x="1000" />
+
+<glyph glyph-name="ok-circled" unicode="&#xe802;" d="M0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m182-57l105-105 104-104 103 104 324 324-103 104-324-325-106 106z" horiz-adv-x="1000" />
+
+<glyph glyph-name="help-circled" unicode="&#xe803;" d="M0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m316 264q-3-49 12-57l57 0q21 47 70 45 33 0 58-32t10-66q-9-23-29-55t-31-56q-20-41-21-90t21-97l70-2q-8 41 9 79t58 89 45 56q25 39 32 62t7 59q0 71-49 121-53 55-145 55-47 0-109-37t-65-74z m94-553q0-35 25-61t59-25 61 25 25 61-25 60-61 24-59-24-25-60z" horiz-adv-x="1000" />
+
+<glyph glyph-name="exclamation" unicode="&#xe804;" d="M0 350q0 207 147 354t353 146 354-146 146-354-146-354-354-146-353 146-147 354z m318 402l79-550 207 0 78 550-364 0z m77-696q0-44 31-76t76-32 76 32 31 76-31 76-76 33-76-33-31-76z" horiz-adv-x="1000" />
+
+<glyph glyph-name="camera" unicode="&#xe805;" d="M0-27l0 627 295 0 31 127 362 0 31-127 281 0 0-627-1000 0z m221 346q0-117 83-199t199-82 198 82 82 199-82 199-198 82-199-82-83-199z m84 0q0 82 57 140t140 59 141-59 58-140-58-140-141-57-140 57-57 140z m527 139l143 0 0 82-143 0 0-82z" horiz-adv-x="1000" />
+
+<glyph glyph-name="calendar" unicode="&#xf4c5;" d="M0-31v761q0 37 26 62t62 26h762q36 0 61-26t26-62v-761q0-36-26-62t-61-26h-762q-36 0-62 26t-26 62z m88 0h762v527h-762v-527z m60 59v175h176v-175h-176z m0 234v176h176v-176h-176z m235-234v175h175v-175h-175z m0 234v176h175v-176h-175z m234-234v175h176v-175h-176z m0 234v176h176v-176h-176z" horiz-adv-x="937.5" />
+</font>
+</defs>
+</svg>

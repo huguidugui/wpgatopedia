@@ -1,0 +1,59 @@
+<main id="main">fff
+  {# **** Section BREADCRUMBS ***** #}
+    {% if function('function_exists', 'my_breadcrumbs') %}
+      {{ function('my_breadcrumbs') }}
+    {%  endif %}
+  {# **** /Section BREADCRUMBS ***** #}
+
+  <section id="blog" class="blog">
+    <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+      <div class="section-title">
+        <h1>Razas de gatos</h1>
+        <p>Conoce a detalle cada una de las impresionantes razas de gatos.</p>
+      </div>
+      <div class="row gy-4 posts-list">
+        {% for post in posts %}
+        
+          {# IMPORNTATE!!!!!!!!! #}
+          {# AQUI SE TOMA EL TAMAÑO MEDIUM DE LA IMAGEN PARA MOSTRAR EN HUBS 400X225 #}
+          {% set image_url = function('wp_get_attachment_image_url', post.thumbnail.id, 'medium') %}
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                {# <img src="{{ post.thumbnail.src }}" class="img-fluid" alt=""> #}
+                <img src="{{ image_url }}" alt="Descripción de la imagen"> 
+
+                <span class="post-date">December 12 {{ post.thumbnail.id }}</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                {# IMPORNTATE 
+                  titulo pone la variable alternative-title (creada dentro de la edición de artículo, en los fieldsCsutome de hasta abajo)
+                  Si no es nula o vacía, pone el alternative sino pone el titulo normal que tenga la entrada
+                #}
+                {% set titulo = post.custom['alternative-title'] is not null and post.custom['alternative-title'] is not empty ? post.custom['alternative-title'] : post.title %}
+                <h3 class="post-title text-center">
+                  {{ titulo }} 
+                </h3>
+
+                <hr>
+
+                <a href="{{ post.link }}" class="readmore stretched-link">
+                  <span>Leer más...</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+              </div>
+
+            </div>
+          </div><!-- End post list item -->
+        {% endfor %}
+      </div><!-- End blog posts list -->
+
+      <div class="d-flex justify-content-center mt-5 blog-pagination">
+        {{ function('paginate_links', posts.pagination()) }}
+      </div><!-- End blog pagination -->
+
+    </div>
+  </section>
+</main> 
+

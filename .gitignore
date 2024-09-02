@@ -1,0 +1,27 @@
+/wp-admin/
+/wp-content/index.php
+/wp-content/debug.log
+/wp-content/languages
+/wp-content/themes/migatito/assets/node_modules/*
+/wp-content/cache/*
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example plugin
+/wp-content/plugins/*
+
+#Paracuando se hagan plugins propios hay que ponerlos aquí
+#!wp-content/plugins/rastreator-amp
+
+# Uploads
+/wp-content/uploads/*
+/wp-content/updraft/*
+
+# htaccess
+/.htaccess

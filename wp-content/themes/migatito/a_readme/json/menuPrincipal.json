@@ -1,0 +1,41 @@
+{
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"itemListElement": [
+	  {
+		"@type": "SiteNavigationElement",
+		"position": "1",
+		"name": "Gatopedia.info - Conoce todas las razas de gatos",
+		"description": "Gatopedia.info Loremp ipsum.",
+		"url": "https://www.gatopedia.info/"
+	  },
+	  {
+		"@type": "SiteNavigationElement",
+		"position": "2",
+		"name": "Nosotros - Descubre las personas detrás de gatopedia.info",
+		"description": "¿Buscas un seguro de Auto en México? Compara tu seguro, puedes ahorrar tiempo y dinero",
+		"url": "https://www.gatopedia.info/nosotros"
+	  },
+	  {
+		"@type": "SiteNavigationElement",
+		"position": "3",
+		"name": "Asociaciones de gatos internacionales - Conoce la 4 principales catagorizadores de gatos",
+		"description": "Lore ppeim ghuop ienta digital que te ayuda a comparar precios y coberturas.",
+		"url": "https://www.gatopedia.info/asociaciones-internacionales-de-gatos"
+	  },
+	  {
+		"@type": "SiteNavigationElement",
+		"position": "4",
+		"name": "Blog sobre gatos - Conoce datos curiosos sobre Gatopedia.info",
+		"description": "Loremp isspp  es contar con un seé se trata? Entra a Gatopedia.info y descúbrelo.",
+		"url": "https://www.gatopedia.info/blog-sobre-gatos"
+	  },
+	  {
+		"@type": "SiteNavigationElement",
+		"position": "5",
+		"name": "Conoce a detalle cada - Gatopedia.info",
+		"description": "Lore kimnu rastreadores de recuperación satelital.",
+		"url": "https://www.gatopedia.info/razas-de-gatos"
+	  }
+	]
+  }

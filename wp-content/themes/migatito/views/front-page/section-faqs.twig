@@ -1,0 +1,9 @@
+{# ======= F.A.Q Section START ======= #}
+    {% if function('function_exists', 'showSectionFaqs') %}
+        {{ function('do_shortcode', '[show-section-faqs faqs="' ~ faqs_for_shortcode ~ '"]') }} 
+    {%  endif %}
+
+    <script type="application/ld+json">
+        {{ faqs_for_jsonld }}
+    </script>
+{# ======= F.A.Q Section END ======= #}

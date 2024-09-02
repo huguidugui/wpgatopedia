@@ -1,0 +1,38 @@
+<div class="row main_claim main_personalized_home">
+	<div class="col-xs-12">
+		<h1>¡Hola de nuevo!
+		<h2>¿Estás preparado para ahorrar en el seguro de tu <strong>{{make}}  {{model}}</strong>?</h2>
+		<p class="home-date py-3">Éste es el mejor precio de la cotización que hiciste el día <strong>{{lastQuoteDate}}</strong></p>
+	</div>
+</div>
+<div class="row main_rastreator_compare main_personalized_home d-flex justify-content-center">
+	<div class="home-table-prices-block col-12 col-sm-6 col-md-6 col-lg-6 d-flex justify-content-center">
+		<table>
+			<tbody>
+				<tr class="tr-background">
+					<td>Aseguradora</td>
+					<td>{{coverType}}</td>
+					<td></td>
+				</tr>
+				<tr class="tr-border">
+					<td class="logo background-white">
+						<a href="{{quoteUrl}}" onclick="dataLayer.push({'event': 'RV_action', 'Action': 'logo'})"><img src="{{minPartnerLogoUrl}}" alt="{{minPricePartner}}" title="{{minPricePartner}}" width="68px" height="68px" class="img-fluid">
+						</a>
+					</td>
+					<td class="price background-white">
+						<a href="{{quoteUrl}}" onclick="dataLayer.push({'event': 'RV_action', 'Action': 'previous_shown_price'})">
+							<span>${{minPrice}}</span>
+						</a>
+					</td>
+					<td class="background-white">
+						<a class="right_icon" href="{{quoteUrl}}" onclick="dataLayer.push({'event': 'RV_action', 'Action': 'go_button'})"><i class="icon-right"></i></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="home-buttons-block text-center mt-3 mt-sm-0 mt-md-0 mt-lg-0 col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+		<a href="{{quoteUrl}}" class="btn top-btn btn-success btn-mayor-mayor text-uppercase" title="Ver precios actualizados" onclick="dataLayer.push({'event': 'RV_action', 'Action': 'see_updated_prices'})">Ver cotización completa</a>
+		<a href="{{cjUrl}}" class="bottom-btn mt-3" title="Cotizar de nuevo" onclick="dataLayer.push({'event': 'RV_action', 'Action': 'quote_again'})">{{btnText}} >></a>
+	</div>
+</div>
