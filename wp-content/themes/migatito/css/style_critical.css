@@ -140,7 +140,7 @@
   --bs-form-invalid-border-color: #dc3545;
   --bg-menu-general: #F19F1F;
   /* Colores Menu */
-    --menu-bg: rgba(16, 7, 30, 0.9);
+    --menu-bg: rgba(16, 7, 30, 0.95);
     --item-bg-over: #4f19ac;
     --item-color-bg-over: #fff;
     --item-color-without-over: #fff;
@@ -12194,11 +12194,13 @@ textarea.form-control-lg {
   padding: 0px 20px 0px 20px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  text-decoration: none;
   font-weight: 500;
   color: var(--item-color-without-over);
   white-space: nowrap;
-  transition: 0.3s;
+  transition: 0.35s;
   height: 70px;
+
 }
 
 .navbar a i,
@@ -12215,6 +12217,8 @@ textarea.form-control-lg {
 .navbar li:hover > a {
   color: var(--item-color-bg-over);
   background: var(--item-bg-over);
+  border-radius: 25px 2px;
+  text-decoration: none;
 }
 
 .navbar .dropdown ul {
