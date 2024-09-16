@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; } // File Security Check
 
 $args_random_razas = array(
     'category'    => 6,      // ID categoría RAZAS DE GATOS
-    'numberposts' => 10,     // Número de artículos a mostrar
+    'numberposts' => 12,     // Número de artículos a mostrar
     'orderby'     => 'rand'  // Ordenar aleatoriamente
 );
 
@@ -62,9 +62,9 @@ $args = array(
 // Retrieve users
 $users = get_users($args);
 
-echo '<pre>';
+/* echo '<pre>';
 var_dump($users);
-echo '</pre>'; exit;
+echo '</pre>'; exit; */
 
 get_footer();
 

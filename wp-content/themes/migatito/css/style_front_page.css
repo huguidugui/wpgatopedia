@@ -28,7 +28,7 @@ background de secciones #451288
 # FAQs
 # Fuente personalizada
 ------------------------------------------------------------- */
-@font-face {
+/* @font-face {
   font-family: 'Outwrite';
   src: url('../fonts/Outwrite.ttf') format('truetype');
   font-style: normal;
@@ -40,17 +40,22 @@ background de secciones #451288
   src: url('../fonts/Lato-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: normal;
-}
+} */
 /*--------------------------------------------------------------
 # Root
 --------------------------------------------------------------*/
 :root {
-  --imagen-general: #108896;
+  --bs-body-font-family-lato: "Lato";
+  --img-border-azul: #67e4ff;
+  --img-border-naranja: #fb7c53;
+  --img-border-verde: #97f497;
+  --img-border-amarillo: #ffd05c;
   /* ** COUNTERS  ***/
   --counter-bg: #FFEFD5; 
   --counter-bg-img: #3498db;
   --counter-color-counters: #EF5030; 
-  --counter-color-title: #292929;
+  /*--counter-color-title: #292929; Checar cuál color queda mejor */ 
+  --counter-color-title: #160a32;
   /* ** /COUNTERS  ***/
 
   /* ** COLORES GENERALES  ***/
@@ -65,10 +70,10 @@ background de secciones #451288
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-body {
-  font-family: 'Lato';
+/* body {
+  font-family: var(--bs-body-font-family-lato);
   color: #444444;
-}
+} */
 
 /* p.fuente-1 {
   font-family: 'Outwrite';
@@ -77,7 +82,7 @@ body {
 /*   IMPORTANTE !!!!!! ****************/
 /* LATO SE QUEDA COMO FUENTE!!!!!! */
 p.fuente-2 {
-  font-family: 'Lato';
+  font-family: var(--bs-body-font-family-lato);
 }
 
 a {
@@ -96,26 +101,26 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--bs-body-font-family-lato);
 }
 
 .img-migatito{
   border-radius: 25px;
-  border-bottom: 10px solid var(--imagen-general);
-  border-top: 1px solid var(--imagen-general);
-  border-right: 1px solid var(--imagen-general);
-  border-left: 1px solid var(--imagen-general);
+  border-bottom: 10px solid var(--img-border-verde);
+  border-top: 1px solid var(--img-border-verde);
+  border-right: 1px solid var(--img-border-verde);
+  border-left: 1px solid var(--img-border-verde);
 }
 
 .btn-general {
-  background: #68A4C4;
+  background: #d300ff;
   display: inline-block;
-  padding: 6px 30px;
-  border-radius: 20px;
+  padding: 10px 40px;
+  border-radius: 27px;
   color: #fff;
   transition: none;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 19px;
+  font-weight: bold;
   transition: 0.3s;
 }
 
@@ -333,7 +338,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--bs-body-font-family-lato);
   color: #384046;
 }
 
@@ -422,7 +427,7 @@ section {
   color: var(--counter-color-title);
   margin: 0;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--bs-body-font-family-lato);
   font-size: 14px;
 }
 
@@ -1394,7 +1399,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--bs-body-font-family-lato);
   color: #777777;
 }
 
@@ -1697,7 +1702,7 @@ section {
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #5a5af3;
+  font-family: var(--bs-body-font-family-lato);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -1745,9 +1750,9 @@ section {
 
 /*--------------------------------------------------------------
 # Fuente personalizada
-# 1. En sitio web de fuentes, elegir los svg
+# 1. En sitio web de fuentes, elegir los svg por ejemplo https://www.svgrepo.com/saved/
 # 2. Buscar un sitio que cree la fuente https://icomoon.io/app/#/select/font
-#    Aquí se subieron los iconos (svg) y después se procesó para que se crearan los archivos
+#    Aquí se subieron(importar) los iconos (svg) y después se procesó para que se crearan los archivos
 #    eot, ttf, woff y svg y el archivo CSS que trae el font-face 
 #    Hay que pegar aquí lo del CSS y poner la fuente en la carpeta font para luego poner la ruta wp-conten/themes/ ... 
 #    En seguida se ponen las clases que corresponden a los iconos
@@ -1756,17 +1761,17 @@ section {
 @font-face {
   /* l2b0la */
   font-family: 'icomoon';
-  src:  url('../fonts/iconmoon_old/icomoon.eot?369');
-  src:  url('../fonts/iconmoon_old/icomoon.eot?369#iefix') format('embedded-opentype'),
-    url('../fonts/iconmoon_old/icomoon.ttf?369') format('truetype'),
-    url('../fonts/iconmoon_old/icomoon.woff?369') format('woff'),
-    url('../fonts/iconmoon_old/icomoon.svg?369#icomoon') format('svg');
+  src:  url('../fonts/iconmoon_papa/icomoon.eot?369');
+  src:  url('../fonts/iconmoon_papa/icomoon.eot?369#iefix') format('embedded-opentype'),
+    url('../fonts/iconmoon_papa/icomoon.ttf?369') format('truetype'),
+    url('../fonts/iconmoon_papa/icomoon.woff?369') format('woff'),
+    url('../fonts/iconmoon_papa/icomoon.svg?369#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="iconn-"], [class*=" iconn-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -1781,13 +1786,49 @@ section {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-headphones:before {
+.iconn-headphones:before {
   content: "\e910";
 }
-.icon-cat_halloween_kitty_icon:before {
+.iconn-cat_halloween_kitty_icon:before {
   content: "\e901";
 }
 
+.iconn-droplet:before {
+  content: "\e90b";
+}
+.iconn-play:before {
+  content: "\e912";
+}
+.iconn-calendar:before {
+  content: "\e953";
+}
+.iconn-location-arrow-svgrepo-com:before {
+  content: "\e901";
+}
+.iconn-megaphone-svgrepo-com:before {
+  content: "\e902";
+}
+.iconn-mug-svgrepo-com:before {
+  content: "\e903";
+}
+.iconn-calendar:before {
+  content: "\e953";
+}
+.iconn-earth:before {
+  content: "\e9ca";
+}
+.iconn-point-up:before {
+  content: "\ea03";
+}
+.iconn-point-right:before {
+  content: "\ea04";
+}
+.iconn-point-down:before {
+  content: "\ea05";
+}
+.iconn-point-left:before {
+  content: "\ea06";
+}
 /* IMPORTANTE */
 /* OJO!! EN LINUX LAS RUTAS SON ../fonts/ |  ../css/ | ../img/ (xamp sin hostvirtuales, osea, http://localhost/gatopedia) */
 /* OJO!! EN windows LAS RUTAS SON /wp-content/themes/(template_name)/fonts/ con hostvirtuales o sea, http://www.gatopedia.dev */

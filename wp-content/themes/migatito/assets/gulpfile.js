@@ -1,5 +1,6 @@
 /*
-	npm 
+	Si sale error de que debe usar una versión superior
+	Comando para usar: nvm use 16.14.1
 */
 
 //Todas las dependencias se ponen al inicio

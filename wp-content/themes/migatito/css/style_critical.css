@@ -19,6 +19,13 @@
  ***************************** */
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Lato';
+  src: url('wp-content/themes/migatito/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -90,7 +97,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-font-family-mia: "Lato";
+  --bs-body-font-family-lato: "Lato";
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -220,7 +227,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family-mia);
+  font-family: var(--bs-body-font-family-lato);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -12192,7 +12199,9 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: var(--bs-body-font-family-lato);
+  
   font-size: 16px;
   text-decoration: none;
   font-weight: 500;
@@ -12546,7 +12555,8 @@ textarea.form-control-lg {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: var(--bs-body-font-family-lato);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;

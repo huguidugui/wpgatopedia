@@ -7,9 +7,10 @@
    <div class="container d-flex align-items-center">
 
       <div class="logo me-auto">
-         <a href="<?php echo get_site_url(); ?>">
+         <h1 class="text-light"><a href="index.html"><span>Gatopedia</span></a></h1>
+         <!-- <a href="<?php echo get_site_url(); ?>">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/migatito_logo_header.png" alt="" class="img-fluid">
-         </a>
+         </a> -->
       </div>
       <?php 
          wp_nav_menu( array (

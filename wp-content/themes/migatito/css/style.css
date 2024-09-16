@@ -1339,6 +1339,13 @@
 	line-height: 1;
   }
   
+  .blog .entry .entry-content h2 {
+	border: 1px solid #999;
+	background: #edc;
+	border-radius: 5px 5px 0 0;
+	padding: 0.5rem 1rem;
+  }
+  
   .blog .entry .entry-content p {
 	line-height: 24px;
   }

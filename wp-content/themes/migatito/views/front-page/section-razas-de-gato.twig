@@ -15,15 +15,15 @@
         {% for raza in random_razas %}
           {% set color = colores[contador % 6] %}
           {% set titulo = raza.custom['alternative-title'] is not null and raza.custom['alternative-title'] is not empty ? raza.custom['alternative-title'] : raza.title %}
-          <div class="col-lg-3 col-md-4 mb-3 mt-md-0">
+          <div class="col-lg-4 col-md-4 mb-3 mt-md-0">
+            <a href="{{ raza.link }}">
             <div class="icon-box border-{{ color }}">
               <i class="bg-patita bg-patita-{{ color }} me-1"></i>
               <h3>
-                <a href="{{ raza.link }}">
                   {{ titulo }}
-                </a>
-              </h3>
-            </div>
+                </h3>
+              </div>
+            </a>
           </div>
            {% if loop.index % 4 == 0 %}
                 {% set contador = contador + 1 %}
