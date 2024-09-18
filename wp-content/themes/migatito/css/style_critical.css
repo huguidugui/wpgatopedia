@@ -156,6 +156,8 @@
   --hero-rgba-claro: rgba(161, 60, 115, 0.6);
   --hero-rgba-bg: #edc;
 
+
+
 }
 
 [data-bs-theme=dark] {
@@ -12494,7 +12496,7 @@ textarea.form-control-lg {
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, var(--hero-rgba-oscuro), var(--hero-rgba-claro)), url("/wp-content/themes/migatito/img/hero-gato.jpg") center center no-repeat;
+  background: linear-gradient(to right, var(--hero-rgba-oscuro), var(--hero-rgba-claro)), url("./wp-content/themes/migatito/img/hero-gato.jpg") center center no-repeat;
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);

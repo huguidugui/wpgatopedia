@@ -1,5 +1,5 @@
 {# ======== RAZAS DE GATO ======= #}
-  <section id="features" class="features my-5">
+  <section id="features" class="features section-amarillo py-5">
     <div class="container">
       <div class="section-title">
         <h2>Razas de Gatos</h2>
@@ -17,15 +17,14 @@
           {% set titulo = raza.custom['alternative-title'] is not null and raza.custom['alternative-title'] is not empty ? raza.custom['alternative-title'] : raza.title %}
           <div class="col-lg-4 col-md-4 mb-3 mt-md-0">
             <a href="{{ raza.link }}">
-            <div class="icon-box border-{{ color }}">
-              <i class="bg-patita bg-patita-{{ color }} me-1"></i>
-              <h3>
-                  {{ titulo }}
-                </h3>
+              <div class="icon-box border-{{ color }}">
+                <i class="bg-patita bg-patita-{{ color }} me-1"></i>
+                <h3> {{ titulo }} </h3>
               </div>
             </a>
           </div>
-           {% if loop.index % 4 == 0 %}
+          {# Aqui se le cambia para poner 2 | 3 | 4 por cada color #}
+           {% if loop.index % 3 == 0 %}
                 {% set contador = contador + 1 %}
             {% endif %}
         {% endfor %}
@@ -36,7 +35,7 @@
         
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
-          <span>botón grande que lleve a razas</span>
+          <a href="{{ site_url }}/razas-de-gatos" class="btn btn-general">Ver todas las Razas de Gato</a>
         </div>
       </div>
     </div>

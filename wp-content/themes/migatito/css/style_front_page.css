@@ -28,14 +28,7 @@ background de secciones #451288
 # FAQs
 # Fuente personalizada
 ------------------------------------------------------------- */
-/* @font-face {
-  font-family: 'Outwrite';
-  src: url('../fonts/Outwrite.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
+/*@font-face {
   font-family: 'Lato';
   src: url('../fonts/Lato-Regular.ttf') format('truetype');
   font-style: normal;
@@ -45,6 +38,10 @@ background de secciones #451288
 # Root
 --------------------------------------------------------------*/
 :root {
+  --bg-section-azul: #e2f0f5;
+  --bg-section-amarillo: #fff1ba;;
+  --bg-section-verde: #e1ffe1;
+
   --bs-body-font-family-lato: "Lato";
   --img-border-azul: #67e4ff;
   --img-border-naranja: #fb7c53;
@@ -62,7 +59,9 @@ background de secciones #451288
     --color-morado: #a139d1;
     --color-rosa: #ff689b;
     --color-azul: #2282ff;
-    --colore-verde: #41cf2e; 
+    --color-verde: #41cf2e;
+    --color-anchor: #0f0f0f;
+    --color-anchor-over: #222;
 /* ** /COLORES GENERALES  ***/
 
 }
@@ -79,19 +78,13 @@ background de secciones #451288
   font-family: 'Outwrite';
 } */
 
-/*   IMPORTANTE !!!!!! ****************/
-/* LATO SE QUEDA COMO FUENTE!!!!!! */
-p.fuente-2 {
-  font-family: var(--bs-body-font-family-lato);
-}
-
 a {
-  color: #3498db;
+  color: var(--color-anchor);
   text-decoration: none;
 }
 
 a:hover {
-  color: #5faee3;
+  color: var(--color-anchor-over);
   text-decoration: none;
 }
 
@@ -106,17 +99,18 @@ h6 {
 
 .img-migatito{
   border-radius: 25px;
-  border-bottom: 10px solid var(--img-border-verde);
-  border-top: 1px solid var(--img-border-verde);
-  border-right: 1px solid var(--img-border-verde);
-  border-left: 1px solid var(--img-border-verde);
+  border-bottom: 10px solid var(--img-border-naranja);
+  border-top: 1px solid var(--img-border-naranja);
+  border-right: 1px solid var(--img-border-naranja);
+  border-left: 1px solid var(--img-border-naranja);
 }
 
 .btn-general {
-  background: #d300ff;
+  background: #9a05b9;
+  border: 3px solid #2c0135;
   display: inline-block;
   padding: 10px 40px;
-  border-radius: 27px;
+  border-radius: 20px 10px;
   color: #fff;
   transition: none;
   font-size: 19px;
@@ -146,7 +140,7 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 20px;
   color: #fff;
   line-height: 0;
 }
@@ -167,6 +161,16 @@ h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
+}
+
+.section-azul{
+  background: var(--bg-section-azul);
+}
+.section-amarillo{
+  background: var(--bg-section-amarillo);
+}
+.section-verde{
+  background: var(--bg-section-verde);
 }
 
 .section-bg {
@@ -489,8 +493,13 @@ section {
   color: var(--color-rosa);
 }
 
-.services .icon-box-pink:hover {
+/* .services .icon-box-pink:hover {
   border-color: var(--color-rosa);
+} */
+
+.services .icon-box-pink {
+  border-radius: 20px 0;
+  border: 2px solid var(--color-rosa);
 }
 
 .services .icon-box-cyan .icon {
@@ -504,8 +513,12 @@ section {
   color: var(--color-morado);
 }
 
-.services .icon-box-purple:hover {
+/* .services .icon-box-purple:hover {
   border-color: var(--color-morado);
+} */
+.services .icon-box-purple {
+  border-radius: 20px 0;
+  border: 2px solid var(--color-morado);
 }
 
 .services .icon-box-green .icon {
@@ -513,11 +526,16 @@ section {
 }
 
 .services .icon-box-green .icon i {
-  color: var(--colore-verde);
+  color: var(--color-verde);
 }
 
-.services .icon-box-green:hover {
-  border-color: var(--colore-verde);
+/* .services .icon-box-green:hover {
+  border-color: var(--color-verde);
+} */
+
+.services .icon-box-green {
+  border-radius: 20px 0;
+  border: 2px solid var(--color-verde);
 }
 
 .services .icon-box-blue .icon {
@@ -528,9 +546,15 @@ section {
   color: var(--color-azul);
 }
 
-.services .icon-box-blue:hover {
+/* .services .icon-box-blue:hover {
   border-color: var(--color-azul);
+} */
+
+.services .icon-box-blue {
+  border-radius: 20px 0;
+  border: 2px solid var(--color-azul);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1631,12 +1655,14 @@ section {
 }
 .border-blue {
   border: 2px solid var(--color-azul);
+  background: #ccffff;
 }
 .border-green {
-  border: 2px solid var(--colore-verde);
+  border: 2px solid var(--color-verde);
 }
 .border-pink {
-  border: 2px solid var(--color-rosa)
+  border: 2px solid var(--color-rosa);
+  background-color: #ffd0e6;
 }
 .border-black {
   border: 2px solid black
@@ -1652,6 +1678,16 @@ section {
 
 .bg-patita-pink{
   background: url("../img/patita-rosa.png") center center;
+  background-size: cover;
+}
+
+.bg-patita-red{
+  background: url("../img/patita-red.png") center center;
+  background-size: cover;
+}
+
+.bg-patita-black{
+  background: url("../img/patita-black.png") center center;
   background-size: cover;
 }
 
