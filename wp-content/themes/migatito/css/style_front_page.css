@@ -1652,6 +1652,7 @@ section {
 
 .border-purple {
   border: 2px solid var(--color-morado);
+  background: #fb95fb;
 }
 .border-blue {
   border: 2px solid var(--color-azul);
@@ -1659,16 +1660,19 @@ section {
 }
 .border-green {
   border: 2px solid var(--color-verde);
+  background: #c6f1b3;
 }
 .border-pink {
   border: 2px solid var(--color-rosa);
   background-color: #ffd0e6;
 }
 .border-black {
-  border: 2px solid black
+  border: 2px solid black;
+  background: #D2D2D2;
 }
 .border-red {
-  border: 2px solid red
+  border: 2px solid red;
+  background: #f3a8a8;
 }
 
 .bg-patita {
