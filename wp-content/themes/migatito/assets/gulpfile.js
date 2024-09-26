@@ -233,7 +233,7 @@ function onError(err) {
 }
 
 // Original-->  gulp.task('build', gulp.series('jsonmin', 'cssmin', 'twigmin', 'themejs'));
-gulp.task('build', gulp.series( 'cssmin'));
+gulp.task('build', gulp.series( 'cssmin', 'themejs'));
 
 // Tarea predeterminada para hacer todas las que se pongan en la tarea build
 // IMPORTANTE Para llamar en consola gulp default --production 1234

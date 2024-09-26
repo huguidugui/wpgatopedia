@@ -18,7 +18,7 @@ $context = array(
     'site_url' => get_site_url()
 );
 
-Timber::render( 'views/asociaciones-min.twig', $context );
+Timber::render( 'views/asociaciones.twig', $context );
 
 
 get_footer();
