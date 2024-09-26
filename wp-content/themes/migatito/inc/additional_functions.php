@@ -1,4 +1,17 @@
 <?php
+/**
+ * BREADCRUMBS
+ * FAQ'S
+ * CARRUSEL
+ * 
+ */
+
+/* =====================================================================================
+ * -------------------------------------------------------------------------------------
+ * BREADCRUMBS
+ * -------------------------------------------------------------------------------------
+ * =====================================================================================
+*/
 function my_breadcrumbs() {
     global $post;
     if ( is_category() ) {
@@ -68,7 +81,7 @@ function my_breadcrumbs() {
 
 /* =====================================================================================
  * -------------------------------------------------------------------------------------
- * SHORTCODE FOR SHOW SECTION FAQ'S
+ * FAQ'S
  * -------------------------------------------------------------------------------------
  * =====================================================================================
 */
@@ -89,6 +102,31 @@ function showSectionFaqs( $atts ) {
 }
 add_shortcode( 'show-section-faqs', 'showSectionFaqs' );
 
+/* =====================================================================================
+ * -------------------------------------------------------------------------------------
+ * CARRUSEL
+ * -------------------------------------------------------------------------------------
+ * =====================================================================================
+*/
+function showCarrusel( $atts ) {
+
+    /* $string_json = ( isset ($atts['faqs']) ) ? $atts['faqs'] : '';
+    $title_faqs = ( isset ($atts['title']) ) ? $atts['title'] : 'Preguntas frecuentes'; */
+
+    /* $faqsCambiarQuotes = str_replace("'", "\"", $string_json);
+    $faqs = str_replace("!!!", "]", $faqsCambiarQuotes);
+    $faqs_json = json_decode( $faqs ); */
+    
+    $context = array(
+        'context' => Timber::get_context()
+        /* 'faqs' => $faqs_json->mainEntity,
+        'title' => $title_faqs */
+    );
+
+    Timber::render( 'views/shortcodes/carrusel-gatos.twig', $context );
+}
+add_shortcode( 'show-carrusel', 'showCarrusel' );
+
 
 function pesoPromedioGato( $atts ) {
 
@@ -102,3 +140,4 @@ function pesoPromedioGato( $atts ) {
     Timber::render( 'views/shortcodes/peso_promedio.twig', $context );
 }
 add_shortcode( 'peso-promedio-gato', 'pesoPromedioGato' );
+

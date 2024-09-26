@@ -2214,6 +2214,51 @@
 	color: #5a5af3;
   }
 
+  .bg-patita {
+	width: 30px;
+	height: 30px;
+  }
+  
+  .bg-patita-pink{
+	background: url("../img/patita-rosa.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-red{
+	background: url("../img/patita-red.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-black{
+	background: url("../img/patita-black.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-blue{
+	background: url("../img/patita-azul.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-purple{
+	background: url("../img/patita-morada.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-marron{
+	background: url("../img/patita-marron.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-orange{
+	background: url("../img/patita-naranja.png") center center;
+	background-size: cover;
+  }
+  
+  .bg-patita-green{
+	background: url("../img/patita-verde.png") center center;
+	background-size: cover;
+  }
+
 
 /*--------------------------------------------------------------
 # Borders
@@ -2228,7 +2273,8 @@
 	border: 2px solid var(--colore-verde);
   }
   .border-pink {
-	border: 2px solid var(--color-rosa)
+	border: 2px solid var(--color-rosa);
+	background-color: #ffd0e6;
   }
 
 /*--------------------------------------------------------------

@@ -5,7 +5,10 @@
   {%  endif %}<!-- End Blog Section -->
 
   {% include 'asociaciones/asociaciones-internacionales.twig' %}
-  {% include 'shortcodes/carrusel-gatos.twig' %}
+
+  {% if function('function_exists', 'showCarrusel') %}
+			{{ function('do_shortcode', '[show-carrusel]') }} 
+	{%  endif %}
 
   
 </main>
