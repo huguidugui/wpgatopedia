@@ -40,7 +40,8 @@ background de secciones #451288
 :root {
   --bg-section-azul: #e2f0f5;
   --bg-section-amarillo: #fff1ba;;
-  --bg-section-verde: #e1ffe1;
+  --bg-section-verde: #f3fff3;
+  --bg-section-naranja: #FFEFD5;
 
   --bs-body-font-family-lato: "Lato";
   --img-border-azul: #67e4ff;
@@ -48,7 +49,6 @@ background de secciones #451288
   --img-border-verde: #97f497;
   --img-border-amarillo: #ffd05c;
   /* ** COUNTERS  ***/
-  --counter-bg: #FFEFD5; 
   --counter-bg-img: #3498db;
   --counter-color-counters: #EF5030; 
   /*--counter-color-title: #292929; Checar cuál color queda mejor */ 
@@ -366,8 +366,11 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: var(--counter-bg);
   padding: 40px 0 40px 0;
+}
+
+.section-naranja {
+  background: var(--bg-section-naranja);
 }
 
 .counts .count-box {
@@ -485,75 +488,81 @@ section {
   margin-bottom: 0;
 }
 
+/**************************************** */
+
+/* FONDO */
 .services .icon-box-pink .icon {
   background: #fceef3;
 }
-
+/* ICONO */
 .services .icon-box-pink .icon i {
   color: var(--color-rosa);
 }
-
-/* .services .icon-box-pink:hover {
-  border-color: var(--color-rosa);
-} */
-
+/* BORDER */
 .services .icon-box-pink {
   border-radius: 20px 0;
   border: 2px solid var(--color-rosa);
 }
+/* HOVER
+  .services .icon-box-pink:hover {
+  border-color: var(--color-rosa);
+} */
+/***************************************** */
 
-.services .icon-box-cyan .icon {
-  background: #e6fdfc;
-}
-
+/* FONDO */
 .services .icon-box-purple .icon {
   background: #f0dff0;
 }
+/* ICONO */
 .services .icon-box-purple .icon i {
   color: var(--color-morado);
 }
-
-/* .services .icon-box-purple:hover {
-  border-color: var(--color-morado);
-} */
+/* BORDER */
 .services .icon-box-purple {
   border-radius: 20px 0;
   border: 2px solid var(--color-morado);
 }
+/* .services .icon-box-purple:hover {
+  border-color: var(--color-morado);
+} */
+/***************************************** */
 
+/* FONDO */
 .services .icon-box-green .icon {
   background: #eafde7;
 }
-
+/* ICONO */
 .services .icon-box-green .icon i {
   color: var(--color-verde);
 }
-
-/* .services .icon-box-green:hover {
-  border-color: var(--color-verde);
-} */
-
+/* BORDER */
 .services .icon-box-green {
   border-radius: 20px 0;
   border: 2px solid var(--color-verde);
 }
+/* .services .icon-box-green:hover {
+  border-color: var(--color-verde);
+} */
+/*************************************** */
 
+/* FONDO */
 .services .icon-box-blue .icon {
   background: #e1eeff;
 }
-
+/* ICONO */
 .services .icon-box-blue .icon i {
   color: var(--color-azul);
 }
-
-/* .services .icon-box-blue:hover {
-  border-color: var(--color-azul);
-} */
-
+/* BORDER */
 .services .icon-box-blue {
   border-radius: 20px 0;
   border: 2px solid var(--color-azul);
 }
+/* .services .icon-box-blue:hover {
+  border-color: var(--color-azul);
+} */
+/*************************************** */
+
 
 
 /*--------------------------------------------------------------
